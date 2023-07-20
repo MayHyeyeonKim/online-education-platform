@@ -1,0 +1,58 @@
+.g-signin2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  margin: 0;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border: 1px solid #326395;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #d86bff;
+  font-size: 18px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #d86bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #f073f2;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 32px;
+  color: #d63df5; /* 이게 왜 안돼? */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
