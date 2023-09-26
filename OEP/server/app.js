@@ -10,7 +10,7 @@ const path = require("path");
 
 //custom routes
 const authRoutes = require("./routes/auth");
-
+const contactRoutes = require("./routes/contact");
 //로드
 dotenv.config();
 
@@ -31,7 +31,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 app.use("/auth", authRoutes);
-
+app.use("/contact", contactRoutes);
 mongoose
     .connect(process.env.MONGO_URI, {
         useNewUrlParser: true,
@@ -46,11 +46,9 @@ configurePassport(passport);
 app.get("/", (req, res) => {
     res.render("login");
 });
-app.get("/about", (req, res) => {
-    res.render("about");
-});
-app.get("/mypage", (req, res) => {
-    res.render("mypage");
+
+app.get("/contact", (req, res) => {
+    res.render("contact");
 });
 
 // 서버 시작
